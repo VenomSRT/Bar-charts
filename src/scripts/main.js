@@ -3,7 +3,7 @@
 function setData(data) {
   if (data.trim()) {
     makeGraph(
-      data.split(' ')
+      data.split(',')
         .filter(elem => (elem.trim() !== '') && !isNaN(+elem.trim()))
     );
   }
